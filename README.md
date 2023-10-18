@@ -276,3 +276,8 @@ Construya un modelo Entidad Relación que permita llevar el control de Canje de 
 - d.	El canje debe tener ID del artículo, Cantidad Canjeada, Precio del artículo, la promoción y observaciones.
 
 #### [Solución](<Enunciados/5>)
+    Se creó un modelo entidad relación con el nombre de `CanjePuntos` utilizando la herramienta de [dbdiagram](https://dbdiagram.io/) que se puede visualizar desde este [enlace](https://dbdiagram.io/d/CanjePuntos-652fd3f8ffbf5169f0f19628).
+
+    A su vez se genero el script DDL para la creación de la base de datos en SQL Server, el cual se encuentra en la carpeta de la solución del enunciado.
+
+  ![ER](Enunciados/5/img/ER.png)
