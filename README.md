@@ -29,34 +29,35 @@ Realice la siguiente prueba generando los scripts / archivos que aplique para ca
 ### 1 - Página ASPX
 Escriba el código de una página ASPX que solicite el nombre del usuario, contraseña, y que valide que los campos no vayan vacíos antes de enviar la solicitud al servidor.
 #### [Solución](<Enunciados/1>)
-    Se creó un proyecto de tipo ASP.NET Web Application (.NET Framework) con el nombre de `PaginaASPX` y se selecciona la plantilla de `Web Forms` para el proyecto.
+  Se creó un proyecto de tipo ASP.NET Web Application (.NET Framework) con el nombre de `PaginaASPX` y se selecciona la plantilla de `Web Forms` para el proyecto.
 
 ![PaginaLogin](Enunciados/1/img/Application.png)
 
-    Se crea un formulario con los campos solicitados y se agrega un botón para enviar la solicitud al servidor.
+  Se crea un formulario con los campos solicitados y se agrega un botón para enviar la solicitud al servidor.
 
-    Se agregan mensajes para el usuario en caso de que los campos estén vacíos.
+  Se agregan mensajes para el usuario en caso de que los campos estén vacíos.
 
 ![CamposVacios](Enunciados/1/img/CamposVacios.png)
 
-    Se agrega un mensaje de error en caso de que el usuario o la contraseña sean incorrectos.
+  Se agrega un mensaje de error en caso de que el usuario o la contraseña sean incorrectos.
 
 ![CredIncorrectas](Enunciados/1/img/CredencialesIncorrectas.png)
 
-    En el caso de que las credenciales sean correctas se redirecciona a la página de contacto.
-    Las credenciales correctas son:
+  En el caso de que las credenciales sean correctas se redirecciona a la página de contacto.
+  Las credenciales correctas son:
 
 - Usuario: `gomzalo`
 - Contraseña: `Promerica2023.`
 
 ![Contacto](Enunciados/1/img/Contacto.png)
 
-    Se agregó un archivo de estilos para darle un mejor aspecto a la página del login.
+  Se agregó un archivo de estilos para darle un mejor aspecto a la página del login.
 
 ### 2 - XML
 Escriba un documento XML que permita intercambiar información de tarjetas de crédito entre dos sistemas distintos: nombre del sistema, localización, número de tarjeta, ID único de cliente, etc.
+
 #### [Solución](<Enunciados/2>)
-    Se creó un archivo XML con el nombre de `TarjetaCredito.xml` con la siguiente estructura:
+  Se creó un archivo XML con el nombre de `TarjetaCredito.xml` con la siguiente estructura:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -98,7 +99,7 @@ Otras:
 -	**MENSAJE**: si el mensaje aplica a que proyecto y que producto
 
 #### [Solución](<Enunciados/3>)
-    Se creo un proyecto de SQL Server con el nombre de `BDPrueba` y se creó una base de datos con el mismo nombre para probar las consultas (Se incluyen scripts DDL y DML en carpeta de solución).
+  Se creo un proyecto de SQL Server con el nombre de `BDPrueba` y se creó una base de datos con el mismo nombre para probar las consultas (Se incluyen scripts DDL y DML en carpeta de solución).
 
   A.	Escriba la consulta en SQL que devuelva el nombre del proyecto y sus productos correspondientes del proyecto premia cuyo código es 1.
 
@@ -183,10 +184,10 @@ Otras:
 Escriba el código de una clase, en sintaxis C# que permita hacer conexiones a una base de datos cualquiera, y que devuelva en uno de sus métodos un Dataset al hacer un SELECT, y en otro de sus métodos el número de filas afectadas al ejecutar un INSERT, UPDATE o DELETE. También debe poder devolver el número de filas que devolvería un SELECT si se ejecutara.
 
 #### [Solución](<Enunciados/4>)
-    Se creó un proyecto de tipo ASP.NET Web API (.NET CORE) con el nombre de `API_REST` y se selecciona la plantilla de `Web API` para el proyecto.
-    Se creo el CRUD para la tabla `Proyecto` de la base de datos `BDPrueba` creada en el enunciado 3.
+  Se creó un proyecto de tipo ASP.NET Web API (.NET CORE) con el nombre de `API_REST` y se selecciona la plantilla de `Web API` para el proyecto.
+  Se creo el CRUD para la tabla `Proyecto` de la base de datos `BDPrueba` creada en el [enunciado 3](#3---sql).
 
-    La clase ConexionBD contiene la logica para la conexión a la base de datos y la ejecución de las consultas utilizando Microsoft.Data.SQLClient.
+  La clase ConexionBD contiene la logica para la conexión a la base de datos y la ejecución de las consultas utilizando Microsoft.Data.SQLClient.
 
   ```csharp	
     using System.Data;
@@ -276,8 +277,8 @@ Construya un modelo Entidad Relación que permita llevar el control de Canje de 
 - d.	El canje debe tener ID del artículo, Cantidad Canjeada, Precio del artículo, la promoción y observaciones.
 
 #### [Solución](<Enunciados/5>)
-    Se creó un modelo entidad relación con el nombre de `CanjePuntos` utilizando la herramienta de [dbdiagram](https://dbdiagram.io/) que se puede visualizar desde este [enlace](https://dbdiagram.io/d/CanjePuntos-652fd3f8ffbf5169f0f19628).
+  Se creó un modelo entidad relación con el nombre de `CanjePuntos` utilizando la herramienta de [dbdiagram](https://dbdiagram.io/) que se puede visualizar desde este [enlace](https://dbdiagram.io/d/CanjePuntos-652fd3f8ffbf5169f0f19628).
 
-    A su vez se genero el script DDL para la creación de la base de datos en SQL Server, el cual se encuentra en la carpeta de la solución del enunciado.
+  A su vez se genero el script DDL para la creación de la base de datos en SQL Server, el cual se encuentra en la carpeta de la solución del enunciado.
 
   ![ER](Enunciados/5/img/ER.png)
