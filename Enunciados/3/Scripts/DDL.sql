@@ -1,0 +1,117 @@
+USE [BDPrueba]
+GO
+
+/****** Object: Table [dbo].[TIPO] Script Date: 10/18/2023 2:41:57 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TIPO] (
+    [COD_TIPO] INT          IDENTITY (1, 1) NOT NULL,
+    [NOMBRE]   VARCHAR (50) NOT NULL
+);
+
+
+USE [BDPrueba]
+GO
+
+/****** Object: Table [dbo].[TIPO_INFORMACION] Script Date: 10/18/2023 2:42:36 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TIPO_INFORMACION] (
+    [COD_TIPO_INFORMACION] INT          IDENTITY (1, 1) NOT NULL,
+    [NOMBRE]               VARCHAR (50) NOT NULL
+);
+USE [BDPrueba]
+GO
+
+/****** Object: Table [dbo].[PRODUCTO] Script Date: 10/18/2023 2:42:50 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[PRODUCTO] (
+    [PRODUCTO]    INT          IDENTITY (1, 1) NOT NULL,
+    [DESCRIPCION] VARCHAR (50) NOT NULL
+);
+
+USE [BDPrueba]
+GO
+
+/****** Object: Table [dbo].[PROYECTO] Script Date: 10/18/2023 2:42:59 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[PROYECTO] (
+    [PROYECTO] INT          IDENTITY (1, 1) NOT NULL,
+    [NOMBRE]   VARCHAR (50) NOT NULL
+);
+
+USE [BDPrueba]
+GO
+
+/****** Object: Table [dbo].[FORMATO_MENSAJE] Script Date: 10/18/2023 2:43:09 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[FORMATO_MENSAJE] (
+    [COD_FORMATO]          INT          IDENTITY (1, 1) NOT NULL,
+    [COD_TIPO]             INT          NOT NULL,
+    [COD_TIPO_INFORMACION] INT          NOT NULL,
+    [NOMBRE]               VARCHAR (50) NOT NULL,
+    [REMITENTE]            VARCHAR (50) NOT NULL,
+    [ASUNTO]               VARCHAR (50) NOT NULL
+);
+
+USE [BDPrueba]
+GO
+
+/****** Object: Table [dbo].[PRODUCTO_PROYECTO] Script Date: 10/18/2023 2:43:21 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[PRODUCTO_PROYECTO] (
+    [PROYECTO] INT NOT NULL,
+    [PRODUCTO] INT NOT NULL
+);
+
+USE [BDPrueba]
+GO
+
+/****** Object: Table [dbo].[MENSAJE] Script Date: 10/18/2023 2:43:41 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[MENSAJE] (
+    [COD_MENSAJE] INT IDENTITY (1, 1) NOT NULL,
+    [COD_FORMATO] INT NOT NULL,
+    [PROYECTO]    INT NOT NULL,
+    [PRODUCTO]    INT NOT NULL
+);
+
+
+
+
+
+
+
