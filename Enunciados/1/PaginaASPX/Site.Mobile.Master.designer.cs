@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PruebaTecnicaPromerica {
+namespace PaginaASPX {
     
     
     public partial class Site_Mobile {

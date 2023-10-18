@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PruebaTecnicaPromerica
+namespace PaginaASPX
 {
 
 
-    public partial class Contact
+    public partial class _Default
     {
     }
 }
