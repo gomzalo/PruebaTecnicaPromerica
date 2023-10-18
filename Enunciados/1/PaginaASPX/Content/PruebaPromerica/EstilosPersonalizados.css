@@ -1,0 +1,16 @@
+﻿/* Estilos para el formulario de inicio de sesión */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el mensaje de éxito */
+#lblSuccess {
+    display: none;
+}
+
+/* Estilos para el mensaje de error */
+#lblMessage {
+    display: none;
+}

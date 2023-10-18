@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<InformacionTarjetaCredito>
+	<Sistema>
+		<Nombre>Sistema A</Nombre>
+		<Localizacion>Ubicación A</Localizacion>
+	</Sistema>
+	<Tarjeta>
+		<Numero>1234 5678 9012 3456</Numero>
+		<Cliente>
+			<ID>123456</ID>
+		</Cliente>
+	</Tarjeta>
+</InformacionTarjetaCredito>
